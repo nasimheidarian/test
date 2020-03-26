@@ -1,0 +1,22 @@
+package Revature.shape;
+
+public class square extends Rectangle {
+
+	public square() {
+		super();
+	}
+	
+	@Override
+	public square(int sidelength) {
+		super.setHeight(sidelength);
+		super.setwidth(sidelength);
+	
+	}
+	public square(int sidelength) {
+		super.setHeight(sidelength);
+		super.setwidth(sidelength);
+	
+	}
+	
+	}
+}

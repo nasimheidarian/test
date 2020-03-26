@@ -1,0 +1,14 @@
+package com.revature.shape;
+
+public abstract class shape {
+
+	
+	private int numofside;
+	
+	public shape() {
+		super();
+	}
+	
+	public int getNumofsides()
+	}
+}

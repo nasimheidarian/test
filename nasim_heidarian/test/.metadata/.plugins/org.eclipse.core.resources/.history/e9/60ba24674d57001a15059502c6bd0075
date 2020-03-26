@@ -1,0 +1,83 @@
+package Com.Revature.Models;
+
+import java.io.Serializable;
+
+public class Operation implements Serializable {
+private static final long serialVersionUID = 1L;
+	
+	private int id;
+	private Type type;
+	private Account src;
+	private Account dst;
+	private float amount;
+	
+	public Operation() {
+		super();
+	}
+	
+	public Operation(int id) {
+		super();
+		this.id = id;
+	}
+	
+	public Operation(int id, Type type, Account src, Account dst, float amount) {
+		super();
+	
+		this.type = type;
+		this.src = src;
+		this.dst = dst;
+		this.amount = amount;
+	}
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public Type gettype() {
+		return type;
+	}
+
+	public void settype(Type type) {
+		this.type =type;
+	}
+
+	public String getlastName() {
+		return lastname;
+	}
+
+	public void setlastName(String lastname) {
+		this.lastname = lastname;
+	}
+	
+	public String getemail() {
+		return email;
+	}
+
+	public void setemail(String email) {
+		this.email = email;
+	}
+
+	public String getusername() {
+		return username;
+	}
+
+	public void setusername(String username) {
+		this.username = username;
+	}
+	public String getpassword() {
+		return password;
+	}
+
+	public void password(String password) {
+		this.password = password;
+	}
+
+	
+	
+
+}

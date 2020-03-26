@@ -1,0 +1,91 @@
+package Com.Revature.Models;
+
+import java.io.Serializable;
+
+public class Account implements Serializable {
+
+
+
+private static final long serialVersionUID = 1L;
+
+private int id;
+private float balance;
+private int clientid;
+
+
+public Account() {
+	super();
+}
+
+public Account(int id) {
+	super();
+	this.id = id;
+}
+
+public Account(int id, float balance,int clientid) {
+	super();
+
+	this.balance = balance;
+	this.clientid = clientid;
+
+}
+
+
+public int getId() {
+	return id;
+}
+
+public void setId(int id) {
+	this.id = id;
+}
+
+public float getbalance() {
+	return balance;
+}
+
+public void setbalance(float balance) {
+	this.balance = balance;
+}
+
+public int getclientid() {
+	return clientid;
+}
+
+public void setclientid(int clientid) {
+	this.clientid = clientid;
+}
+
+@Override
+public int hashCode() {
+	final int prime = 31;
+	int result = 1;
+	result = prime * result + Float.floatToIntBits(balance);
+	result = prime * result + clientid;
+	result = prime * result + id;
+	return result;
+}
+
+@Override
+public boolean equals(Object obj) {
+	if (this == obj)
+		return true;
+	if (obj == null)
+		return false;
+	if (getClass() != obj.getClass())
+		return false;
+	Account other = (Account) obj;
+	if (Float.floatToIntBits(balance) != Float.floatToIntBits(other.balance))
+		return false;
+	if (clientid != other.clientid)
+		return false;
+	if (id != other.id)
+		return false;
+	return true;
+}
+
+@Override
+public String toString() {
+	return "Account [id=" + id + ", balance=" + balance + ", clientid=" + clientid + "]";
+}
+
+}

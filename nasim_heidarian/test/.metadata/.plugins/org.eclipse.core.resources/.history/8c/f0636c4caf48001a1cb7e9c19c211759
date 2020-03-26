@@ -1,0 +1,9 @@
+package Car;
+
+public abstract class BMW implements car {
+
+	public float fuel() {
+		return 12;
+		
+	}
+}

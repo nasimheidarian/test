@@ -1,0 +1,46 @@
+package Com.Revature.Models;
+
+import java.io.Serializable;
+
+public class Type implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
+	
+	private int id;
+	private String operationtype;
+
+	
+	public Type() {
+		super();
+	}
+	
+	public Type(int id) {
+		super();
+		this.id = id;
+	}
+	
+	public Type(int id, String operationtype) {
+		super();
+	
+		this.operationtype = operationtype;
+	}
+	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getoperationtype() {
+		return operationtype;
+	}
+
+	public void setoperationtype(String operationtype) {
+		this.operationtype = operationtype;
+	}
+
+	
+}

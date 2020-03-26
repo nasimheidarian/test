@@ -1,0 +1,8 @@
+package cars;
+
+public class AUDI implements Cars {
+
+	public float power() {
+		return 10;
+	}
+}
